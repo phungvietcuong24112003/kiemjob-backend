@@ -1,0 +1,17 @@
+package com.kiemjob.backend.dto.cv;
+
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.List;
+
+@Getter
+@Setter
+public class CvSectionOrderRequest {
+
+    @NotNull
+    @Valid
+    private List<CvSectionOrderItemRequest> sectionOrders;
+}
